@@ -14,7 +14,7 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "6700419db20f940fcfc36ea9",
+  "nxCloudId": "6702d7b7cbb9177c975da6b9",
   "targetDefaults": {
     "@angular-devkit/build-angular:browser": {
       "cache": true,
@@ -45,6 +45,11 @@
     },
     "e2e-ci--**/*": {
       "dependsOn": ["^build"]
+    },
+    "@nx/esbuild:esbuild": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "plugins": [
