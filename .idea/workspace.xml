@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,50 +23,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea7e228a-e120-444c-915b-07a236c6ff05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/api/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/.github/workflows/ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/.prettierignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books-e2e/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books-e2e/playwright.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books-e2e/project.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books-e2e/src/example.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books-e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/jest.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/project.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/app/app.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/app/app.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/app/nx-welcome.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/src/test-setup.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/tsconfig.editor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/apps/ng-books/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/jest.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/jest.preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/nx.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-monorepo/tsconfig.base.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.effects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-view.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-view.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,17 +64,31 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\mateu\Repos\ng-books\ng-books\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mateu\Repos\ng-books\ng-books\apps\ng-books\src\app\views\books-edit" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mateu\Repos\ng-books\ng-books\apps\ng-books\src\app\views\books-list" />
+      <recent name="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list" />
+      <recent name="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views" />
       <recent name="C:\Users\mateu\Repos\ng-books\ng-books\apps\api\src" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,6 +99,12 @@
       <option name="presentableId" value="Default" />
       <updated>1728239290645</updated>
       <workItem from="1728239291758" duration="2975000" />
+      <workItem from="1728280292615" duration="346000" />
+      <workItem from="1728327300583" duration="5966000" />
+      <workItem from="1728361065501" duration="12711000" />
+      <workItem from="1728398541621" duration="9266000" />
+      <workItem from="1728416364878" duration="120000" />
+      <workItem from="1728416527299" duration="184000" />
     </task>
     <servers />
   </component>
@@ -111,5 +121,31 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1086" y="413" key="#com.intellij.ide.util.MemberChooser" timestamp="1728407292417">
+      <screen x="0" y="0" width="2560" height="1392" />
+    </state>
+    <state x="1086" y="413" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1392@0.0.2560.1392" timestamp="1728407292417" />
+    <state x="987" y="296" width="736" height="801" key="find.popup" timestamp="1728414536800">
+      <screen x="0" y="0" width="2560" height="1392" />
+    </state>
+    <state x="987" y="296" width="736" height="801" key="find.popup/0.0.2560.1392@0.0.2560.1392" timestamp="1728414536800" />
+    <state x="943" y="313" width="672" height="678" key="search.everywhere.popup" timestamp="1728417466292">
+      <screen x="0" y="0" width="2560" height="1392" />
+    </state>
+    <state x="943" y="313" width="672" height="678" key="search.everywhere.popup/0.0.2560.1392@0.0.2560.1392" timestamp="1728417466292" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.ts</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
