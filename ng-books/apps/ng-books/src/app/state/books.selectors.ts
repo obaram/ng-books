@@ -10,8 +10,7 @@ export const selectBooks = createSelector(
   (state: BooksState) => state.items
 );
 
-export const selectBookById = (bookId: number) => createSelector(
-  selectBooks,
-  (books) => books.find(book => {
-    return book.id === bookId})
+export const selectCurrentBook = createSelector(
+  selectBooksFeature,
+  (state: BooksState) => state.currentItem
 );
