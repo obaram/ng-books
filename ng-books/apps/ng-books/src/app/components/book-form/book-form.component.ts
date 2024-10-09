@@ -1,4 +1,4 @@
-import {Component, Input, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -33,7 +33,7 @@ import {
   templateUrl: './book-form.component.html',
   styleUrls: ['./book-form.component.scss']
 })
-export class BookFormComponent implements OnInit{
+export class BookFormComponent {
   private _book!: Book | null | undefined;
 
 
@@ -48,6 +48,9 @@ export class BookFormComponent implements OnInit{
   get book(): Book | null | undefined {
     return this._book;
   }
+
+  @Output() onSubmit = new EventEmitter<Book>();
+  @Output() onCancel = new EventEmitter<Book>();
 
   public bookForm: FormGroup;
   public bookId: string | null = null;
@@ -87,14 +90,10 @@ export class BookFormComponent implements OnInit{
     });
   }
 
-  onSubmit(): void {
+  onSave(): void {
     if (this.bookForm.valid) {
       const updatedBook = this.bookForm.value;
-
-      this.router.navigate(['/']);
+      this.onSubmit.next(updatedBook);
     }
-  }
-
-  ngOnInit(): void {
   }
 }
