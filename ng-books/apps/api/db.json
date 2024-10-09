@@ -1,20 +1,7 @@
 {
   "books": [
     {
-      "id": 1,
-      "title": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "coverImage": "https://picsum.photos/id/237/400/300",
-      "publishedYear": 1925,
-      "genre": "Classic Fiction",
-      "isbn": "9780743273565",
-      "summary": "A novel about the disillusionment and excess of the Jazz Age, narrated by Nick Carraway, who is drawn into the opulent world of his mysterious neighbor, Jay Gatsby.",
-      "pages": 180,
-      "publisher": "Charles Scribner's Sons",
-      "language": "English"
-    },
-    {
-      "id": 2,
+      "id": "2",
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "coverImage": "https://picsum.photos/id/238/400/300",
@@ -27,7 +14,7 @@
       "language": "English"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "1984",
       "author": "George Orwell",
       "coverImage": "https://picsum.photos/id/239/400/300",
@@ -40,7 +27,7 @@
       "language": "English"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
       "coverImage": "https://picsum.photos/id/240/400/300",
@@ -53,7 +40,7 @@
       "language": "English"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "The Catcher in the Rye",
       "author": "J.D. Salinger",
       "coverImage": "https://picsum.photos/id/250/400/300",
@@ -66,7 +53,7 @@
       "language": "English"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Moby Dick",
       "author": "Herman Melville",
       "coverImage": "https://picsum.photos/id/251/400/300",
@@ -79,7 +66,7 @@
       "language": "English"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "War and Peace",
       "author": "Leo Tolstoy",
       "coverImage": "https://picsum.photos/id/252/400/300",
@@ -92,8 +79,7 @@
       "language": "Russian"
     },
     {
-      "id": 8,
-      "title": "Crime and Punishment",
+      "title": "Crime and Punishment test",
       "author": "Fyodor Dostoevsky",
       "coverImage": "https://picsum.photos/id/253/400/300",
       "publishedYear": 1866,
@@ -102,10 +88,11 @@
       "summary": "A psychological exploration of the moral dilemmas faced by Rodion Raskolnikov, who believes he is above the law.",
       "pages": 671,
       "publisher": "The Russian Messenger",
-      "language": "Russian"
+      "language": "Russian",
+      "id": "8"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Anna Karenina",
       "author": "Leo Tolstoy",
       "coverImage": "https://picsum.photos/id/254/400/300",
@@ -118,7 +105,7 @@
       "language": "Russian"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "coverImage": "https://picsum.photos/id/255/400/300",
@@ -131,7 +118,7 @@
       "language": "Russian"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Madame Bovary",
       "author": "Gustave Flaubert",
       "coverImage": "https://picsum.photos/id/256/400/300",
@@ -144,7 +131,7 @@
       "language": "French"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
       "coverImage": "https://picsum.photos/id/257/400/300",
@@ -157,7 +144,7 @@
       "language": "English"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Jane Eyre",
       "author": "Charlotte Brontë",
       "coverImage": "https://picsum.photos/id/258/400/300",
@@ -170,7 +157,7 @@
       "language": "English"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Frankenstein",
       "author": "Mary Shelley",
       "coverImage": "https://picsum.photos/id/259/400/300",
@@ -180,58 +167,6 @@
       "summary": "A novel about young scientist Victor Frankenstein who creates a grotesque but sentient creature in an unorthodox scientific experiment.",
       "pages": 280,
       "publisher": "Lackington, Hughes, Harding, Mavor & Jones",
-      "language": "English"
-    },
-    {
-      "id": 15,
-      "title": "Dracula",
-      "author": "Bram Stoker",
-      "coverImage": "https://picsum.photos/id/260/400/300",
-      "publishedYear": 1897,
-      "genre": "Gothic Horror",
-      "isbn": "9780486411095",
-      "summary": "The famous novel introducing Count Dracula, and the vampire mythos to popular culture.",
-      "pages": 418,
-      "publisher": "Archibald Constable and Company",
-      "language": "English"
-    },
-    {
-      "id": 16,
-      "title": "A Tale of Two Cities",
-      "author": "Charles Dickens",
-      "coverImage": "https://picsum.photos/id/261/400/300",
-      "publishedYear": 1859,
-      "genre": "Historical Fiction",
-      "isbn": "9781853262647",
-      "summary": "Set in London and Paris before and during the French Revolution, the novel tells the story of the plight of the French peasantry, the brutality demonstrated by the revolutionaries, and the parallels in London society.",
-      "pages": 544,
-      "publisher": "Chapman & Hall",
-      "language": "English"
-    },
-    {
-      "id": 17,
-      "title": "The Adventures of Finn",
-      "author": "Mark Twain",
-      "coverImage": "https://picsum.photos/id/269/400/300",
-      "publishedYear": 1884,
-      "genre": "Picaresque Novel",
-      "isbn": "9780486280615",
-      "summary": "A direct sequel to 'The Adventures of Tom Sawyer', the story follows young Huckleberry Finn and his journey down the Mississippi River.",
-      "pages": 366,
-      "publisher": "Chatto & Windus / Charles L. Webster And Company",
-      "language": "English"
-    },
-    {
-      "id": 18,
-      "title": "The Hobbit",
-      "author": "J.R.R. Tolkien",
-      "coverImage": "https://picsum.photos/id/270/400/300",
-      "publishedYear": 1937,
-      "genre": "Fantasy",
-      "isbn": "9780547928227",
-      "summary": "A children's fantasy novel that introduces the world of Middle-earth, following the quest of home-loving Bilbo Baggins to win a share of the treasure guarded by the dragon, Smaug.",
-      "pages": 310,
-      "publisher": "George Allen & Unwin",
       "language": "English"
     }
   ]

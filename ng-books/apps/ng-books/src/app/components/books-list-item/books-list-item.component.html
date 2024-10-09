@@ -10,7 +10,7 @@
     <p><strong>Summary:</strong> {{ book?.summary }}</p>
   </mat-card-content>
   <mat-card-actions style="margin-top: auto;">
-    <button mat-button>Delete</button>
-    <button mat-button>Edit</button>
+    <button mat-button (click)="onDeleteClick()">Delete</button>
+    <button mat-button (click)="onEditClick()">Edit</button>
   </mat-card-actions>
 </mat-card>

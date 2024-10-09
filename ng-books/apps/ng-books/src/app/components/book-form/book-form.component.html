@@ -5,7 +5,7 @@
   <h1>Edit Book</h1>
     </mat-card-header>
 <mat-card-content>
-  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutGap="16px">
+  <form [formGroup]="bookForm" fxLayout="column" fxLayoutGap="16px">
     <!-- Title Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Title</mat-label>
@@ -79,8 +79,8 @@
     </mat-form-field>
 
     <div [ngStyle]="{'display': 'flex', 'gap': '12px'}">
-    <button mat-raised-button color="primary" type="submit" [disabled]="bookForm.invalid">Save</button>
-    <button mat-raised-button color="secondary"  type="submit">Cancel</button>
+    <button mat-raised-button color="primary" type="button" [disabled]="bookForm.invalid" (click)="onSave()">Save</button>
+    <button mat-raised-button color="secondary"  type="button" (click)="onCancel.emit()">Cancel</button>
     </div>
 
   </form>
