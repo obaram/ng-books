@@ -22,27 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea7e228a-e120-444c-915b-07a236c6ff05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.effects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.selectors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-view.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-view.scss" beforeDir="false" />
-    </list>
+    <list default="true" id="ea7e228a-e120-444c-915b-07a236c6ff05" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,20 +38,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2n4jYPUZQh2fkH8K9gWQQubAP4K" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\mateu\Repos\ng-books\ng-books\node_modules\typescript\lib" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;feat-display-list-of-books&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mateuszobara/ng-books/ng-books/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mateu\Repos\ng-books\ng-books\apps\ng-books\src\app\views\books-edit" />
@@ -105,6 +91,8 @@
       <workItem from="1728398541621" duration="9266000" />
       <workItem from="1728416364878" duration="120000" />
       <workItem from="1728416527299" duration="184000" />
+      <workItem from="1728457256548" duration="1634000" />
+      <workItem from="1728471917269" duration="346000" />
     </task>
     <servers />
   </component>
@@ -121,21 +109,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1086" y="413" key="#com.intellij.ide.util.MemberChooser" timestamp="1728407292417">
-      <screen x="0" y="0" width="2560" height="1392" />
-    </state>
-    <state x="1086" y="413" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1392@0.0.2560.1392" timestamp="1728407292417" />
-    <state x="987" y="296" width="736" height="801" key="find.popup" timestamp="1728414536800">
-      <screen x="0" y="0" width="2560" height="1392" />
-    </state>
-    <state x="987" y="296" width="736" height="801" key="find.popup/0.0.2560.1392@0.0.2560.1392" timestamp="1728414536800" />
-    <state x="943" y="313" width="672" height="678" key="search.everywhere.popup" timestamp="1728417466292">
-      <screen x="0" y="0" width="2560" height="1392" />
-    </state>
-    <state x="943" y="313" width="672" height="678" key="search.everywhere.popup/0.0.2560.1392@0.0.2560.1392" timestamp="1728417466292" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import {EMPTY, switchMap, tap} from 'rxjs';
+import {EMPTY, switchMap } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import {BooksService} from "../services/books.service";
-import {getAllBooksSuccess} from "./actions";
+import {getAllBooksSuccess, getBookSuccess} from "./actions";
 
 @Injectable()
 export class BooksEffects {
@@ -23,11 +23,11 @@ export class BooksEffects {
   );
 
   loadBook$ = createEffect(() => this.actions$.pipe(
-    ofType('[Book] Get book'),
+    ofType('[Books] Get book'),
     switchMap((action: { bookId: string }) =>
-      this.booksService.getBookById(action.bookId)
+      this.booksService.getBookById(+action.bookId)
         .pipe(
-          map(book => getAllBooksSuccess({ payload: book })),
+          map(book => getBookSuccess({ book: book })),
           catchError(() => EMPTY)
         )
     )
