@@ -16,7 +16,7 @@ export const booksFeatureKey = "books";
 
 export const booksReducer = createReducer(
   initialState,
-  on(getAllBooksSuccess, (state, {payload}) => ({...state, items: payload})),
+  on(getAllBooksSuccess, (state, {books}) => ({...state, items: books})),
   on(getBookSuccess, (state, {book}) => ({...state, currentItem: book})),
   on(deleteBookSuccess, (state, { bookId }) => ({
     ...state,

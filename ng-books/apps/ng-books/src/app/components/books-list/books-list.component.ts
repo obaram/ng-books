@@ -18,15 +18,25 @@ import {AppState} from "../../types/app-state";
 @Component({
   standalone: true,
   selector: 'app-books-list',
-  imports: [CommonModule, MatCard, MatCardContent, MatCardHeader, MatCardTitle, MatCardSubtitle, MatCardImage, BooksListItemComponent, MatButtonModule],
+  imports: [
+    CommonModule,
+    MatCard,
+    MatCardContent,
+    MatCardHeader,
+    MatCardTitle,
+    MatCardSubtitle,
+    MatCardImage,
+    BooksListItemComponent,
+    MatButtonModule],
   templateUrl: './books-list.component.html',
+  styleUrls: ['./books-list.component.scss'],
 })
 export class BooksListComponent {
   @Input() books: Book[] | null = [];
 
   constructor(private store: Store<AppState>) {}
 
-  onCreateClick(): void {
+  public onCreateClick(): void {
       this.store.dispatch(navigateToCreateView());
   }
 }

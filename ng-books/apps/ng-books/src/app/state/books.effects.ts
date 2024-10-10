@@ -25,7 +25,7 @@ export class BooksEffects {
       ofType(getAllBooks),
       switchMap(() => this.booksService.getBooks()
         .pipe(
-          map(books => getAllBooksSuccess({payload: books})),
+          map(books => getAllBooksSuccess({books: books})),
           catchError(() => EMPTY)
         ))
     )

@@ -1,0 +1,25 @@
+.book-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 600px;
+}
+
+.book-card-header {
+  padding: 24px;
+}
+
+.book-card-image {
+  width: auto;
+  max-height: 200px;
+  align-self: center;
+}
+
+.book-card-content {
+  padding: 24px;
+  flex: 1 0 auto;
+}
+
+.book-card-actions {
+  margin-top: auto;
+}
