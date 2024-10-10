@@ -1,54 +1,47 @@
 <div class="full-screen">
-<div class="edit-book-form" fxLayout="column" fxLayoutAlign="center center">
+<div class="edit-book-form">
   <mat-card>
     <mat-card-header>
   <h1>Edit Book</h1>
     </mat-card-header>
 <mat-card-content>
-  <form [formGroup]="bookForm" fxLayout="column" fxLayoutGap="16px">
-    <!-- Title Field -->
+  <form [formGroup]="bookForm">
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Title</mat-label>
       <input matInput id="title" formControlName="title" placeholder="Enter the title" />
       <mat-error *ngIf="bookForm.get('title')?.hasError('required')">Title is required</mat-error>
     </mat-form-field>
 
-    <!-- Author Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Author</mat-label>
       <input matInput id="author" formControlName="author" placeholder="Enter the author" />
       <mat-error *ngIf="bookForm.get('author')?.hasError('required')">Author is required</mat-error>
     </mat-form-field>
 
-    <!-- Cover Image Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Cover Image URL</mat-label>
       <input matInput id="coverImage" formControlName="coverImage" placeholder="Enter the cover image URL" />
       <mat-error *ngIf="bookForm.get('coverImage')?.hasError('required')">Cover image URL is required</mat-error>
     </mat-form-field>
 
-    <!-- Published Year Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Published Year</mat-label>
       <input matInput id="publishedYear" formControlName="publishedYear" type="number" placeholder="Enter the published year" />
       <mat-error *ngIf="bookForm.get('publishedYear')?.hasError('required')">Published year is required</mat-error>
     </mat-form-field>
 
-    <!-- Genre Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Genre</mat-label>
       <input matInput id="genre" formControlName="genre" placeholder="Enter the genre" />
       <mat-error *ngIf="bookForm.get('genre')?.hasError('required')">Genre is required</mat-error>
     </mat-form-field>
 
-    <!-- ISBN Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>ISBN</mat-label>
       <input matInput id="isbn" formControlName="isbn" placeholder="Enter the ISBN" />
       <mat-error *ngIf="bookForm.get('isbn')?.hasError('required')">ISBN is required</mat-error>
     </mat-form-field>
 
-    <!-- Summary Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Summary</mat-label>
       <textarea matInput id="summary" formControlName="summary" placeholder="Enter the summary"></textarea>
@@ -56,7 +49,6 @@
       <mat-error *ngIf="bookForm.get('summary')?.hasError('minlength')">Summary must be at least 10 characters long</mat-error>
     </mat-form-field>
 
-    <!-- Pages Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Pages</mat-label>
       <input matInput id="pages" formControlName="pages" type="number" placeholder="Enter the number of pages" />
@@ -64,14 +56,12 @@
       <mat-error *ngIf="bookForm.get('pages')?.hasError('min')">Pages must be greater than 0</mat-error>
     </mat-form-field>
 
-    <!-- Publisher Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Publisher</mat-label>
       <input matInput id="publisher" formControlName="publisher" placeholder="Enter the publisher" />
       <mat-error *ngIf="bookForm.get('publisher')?.hasError('required')">Publisher is required</mat-error>
     </mat-form-field>
 
-    <!-- Language Field -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Language</mat-label>
       <input matInput id="language" formControlName="language" placeholder="Enter the language" />
@@ -80,7 +70,7 @@
 
     <div [ngStyle]="{'display': 'flex', 'gap': '12px'}">
     <button mat-raised-button color="primary" type="button" [disabled]="bookForm.invalid" (click)="onSave()">Save</button>
-    <button mat-raised-button color="secondary"  type="button" (click)="onCancel.emit()">Cancel</button>
+    <button mat-raised-button color="secondary"  type="button" (click)="cancel.emit()">Cancel</button>
     </div>
 
   </form>

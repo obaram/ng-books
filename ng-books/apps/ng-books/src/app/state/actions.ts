@@ -1,9 +1,8 @@
 import {createAction, props} from '@ngrx/store';
 import {Book} from "../types/book";
 
-
-export const getAllBooks = createAction('[Books] Get books');
-export const getAllBooksSuccess = createAction('[Books] Books Success', props<{books: Book[]}>())
+export const getBooks = createAction('[Books] Get books');
+export const getAllBooksSuccess = createAction('[Books] Get books Success', props<{books: Book[]}>())
 export const getAllBooksError = createAction('[Books] Ger books error', props<{error: Error}>())
 
 export const getBook = createAction('[Books] Get book', props<{bookId: number}>());
@@ -24,3 +23,5 @@ export const deleteBookError = createAction('[Books] Delete book error', props<{
 
 export const navigateToEditView = createAction('[Books] Navigate to Edit View', props<{ bookId: number }>());
 export const navigateToCreateView = createAction('[Books] Navigate to Create View');
+
+export const setFilter = createAction('[Books] Set filter', props<{key: string, value: string}>());

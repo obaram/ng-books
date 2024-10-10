@@ -4,7 +4,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {Store} from "@ngrx/store";
 import {Book} from "../../types/book";
-import {getAllBooks} from "../../state/actions";
+import {getBooks} from "../../state/actions";
 import {Observable} from "rxjs";
 import {selectBooks} from "../../state/books.selectors";
 import {BooksListComponent} from "../../components/books-list/books-list.component";
@@ -18,12 +18,14 @@ import {AsyncPipe} from "@angular/common";
   templateUrl: './books-view.html',
 })
 export class BooksViewComponent implements OnInit{
-  books$: Observable<Book[]> = this.store.select(selectBooks);
+  books$!: Observable<Book[]>;
+
   constructor(private store: Store<AppState>) {
+   this.books$ = this.store.select(selectBooks);
   }
 
   public ngOnInit(){
-    this.store.dispatch(getAllBooks());
+    this.store.dispatch(getBooks());
   }
 
 }

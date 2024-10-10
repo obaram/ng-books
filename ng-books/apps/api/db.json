@@ -14,8 +14,7 @@
       "language": "English"
     },
     {
-      "id": "3",
-      "title": "1984",
+      "title": "1983",
       "author": "George Orwell",
       "coverImage": "https://picsum.photos/id/239/400/300",
       "publishedYear": 1949,
@@ -24,7 +23,8 @@
       "summary": "A dystopian novel set in a totalitarian society ruled by Big Brother, where truth is subjective, and individuality is punished.",
       "pages": 328,
       "publisher": "Secker & Warburg",
-      "language": "English"
+      "language": "English",
+      "id": "3"
     },
     {
       "id": "4",

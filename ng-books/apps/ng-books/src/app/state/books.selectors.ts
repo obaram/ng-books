@@ -14,3 +14,8 @@ export const selectCurrentBook = createSelector(
   selectBooksFeature,
   (state: BooksState) => state.currentItem
 );
+
+export const selectFilters = createSelector(
+  selectBooksFeature,
+  (state: BooksState) => state.filters
+);

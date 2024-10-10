@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -49,8 +49,8 @@ export class BookFormComponent {
     return this._book;
   }
 
-  @Output() onSubmit = new EventEmitter<Book>();
-  @Output() onCancel = new EventEmitter<Book>();
+  @Output() save = new EventEmitter<Book>();
+  @Output() cancel = new EventEmitter<Book>();
 
   public bookForm: FormGroup;
   public bookId: string | null = null;
@@ -75,7 +75,7 @@ export class BookFormComponent {
   }
 
 
-  patchForm(book: Book): void {
+  public patchForm(book: Book): void {
     this.bookForm.patchValue({
       title: book.title,
       author: book.author,
@@ -90,10 +90,10 @@ export class BookFormComponent {
     });
   }
 
-  onSave(): void {
+  public onSave(): void {
     if (this.bookForm.valid) {
       const updatedBook = this.bookForm.value;
-      this.onSubmit.next(updatedBook);
+      this.save.next(updatedBook);
     }
   }
 }

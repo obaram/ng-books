@@ -1,1 +1,1 @@
-<app-book-form [book]="book$ | async" (onSubmit)="onSubmit($event)" (onCancel)="onCancel()"/>
+<app-book-form [book]="book$ | async" (save)="onSubmit($event)" (cancel)="onCancel()"/>

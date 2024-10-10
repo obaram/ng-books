@@ -1,29 +1,34 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import {EMPTY,  switchMap, tap} from 'rxjs';
+import {EMPTY, switchMap, tap, withLatestFrom} from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import {BooksService} from "../services/books.service";
 import {
   createBook,
-  createBookSuccess, deleteBook, deleteBookSuccess, getAllBooks,
+  createBookSuccess, deleteBook, deleteBookSuccess, getBooks,
   getAllBooksSuccess,
   getBookSuccess,
   navigateToCreateView,
-  navigateToEditView, updateBook, updateBookSuccess
+  navigateToEditView, setFilter, updateBook, updateBookSuccess
 } from "./actions";
 import {Router} from "@angular/router";
+import {select, Store} from "@ngrx/store";
+import {AppState} from "../types/app-state";
+import {selectFilters} from "./books.selectors";
 
 @Injectable()
 export class BooksEffects {
   constructor(
     private actions$: Actions,
     private booksService: BooksService,
-  private router: Router
+    private store: Store<AppState>,
+    private router: Router
   ) {}
 
-  loadBooks$ = createEffect(() => this.actions$.pipe(
-      ofType(getAllBooks),
-      switchMap(() => this.booksService.getBooks()
+  getBooks$ = createEffect(() => this.actions$.pipe(
+      ofType(getBooks, setFilter),
+      withLatestFrom(this.store.pipe(select(selectFilters))),
+      switchMap(([, filters]) => this.booksService.getBooks(filters)
         .pipe(
           map(books => getAllBooksSuccess({books: books})),
           catchError(() => EMPTY)
@@ -31,7 +36,7 @@ export class BooksEffects {
     )
   );
 
-  loadBook$ = createEffect(() => this.actions$.pipe(
+  getSingleBook$ = createEffect(() => this.actions$.pipe(
     ofType('[Books] Get book'),
     switchMap((action: { bookId: string }) =>
       this.booksService.getBookById(+action.bookId)
@@ -41,28 +46,6 @@ export class BooksEffects {
         )
     )
     )
-  );
-
-  navigateToEdit$ = createEffect(
-    () =>
-      this.actions$.pipe(
-        ofType(navigateToEditView),
-        tap(({ bookId }) => {
-          this.router.navigate(['/edit', bookId]);
-        })
-      ),
-    { dispatch: false }
-  );
-
-  navigateToCreate$ = createEffect(
-    () =>
-      this.actions$.pipe(
-        ofType(navigateToCreateView),
-        tap(() => {
-          this.router.navigate(['/create']);
-        })
-      ),
-    { dispatch: false }
   );
 
   createBook$ = createEffect(() => this.actions$.pipe(
@@ -85,6 +68,27 @@ export class BooksEffects {
       map(() => deleteBookSuccess({ bookId: action.bookId })),
       catchError(()=> EMPTY))
     )));
+
+  navigateToEdit$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(navigateToEditView),
+        tap(({ bookId }) => {
+          this.router.navigate(['/edit', bookId]);
+        })
+      ),
+    { dispatch: false }
+  );
+
+  navigateToCreate$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(navigateToCreateView),
+        tap(() => {
+          this.router.navigate(['/create']);
+        })
+      ),
+    { dispatch: false });
 
   navigateToMain$ = createEffect(() => this.actions$.pipe(
     ofType(updateBookSuccess, createBookSuccess),

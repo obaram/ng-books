@@ -23,11 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea7e228a-e120-444c-915b-07a236c6ff05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/api/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.ts" afterDir="false" />
@@ -35,7 +36,14 @@
       <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.effects.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/types/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/types/book.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-create/book-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-create/book-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/nx.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/nx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/tsconfig.base.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +68,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mateuszobara/ng-books/ng-books/apps/ng-books/src/app/views/books-create&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/mateuszobara/ng-books/ng-books/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/mateuszobara/ng-books/ng-books/apps/ng-books/src/app/views/books-create",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Shell Script",
+    "ts.external.directory.path": "/Users/mateuszobara/ng-books/ng-books/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-create" />

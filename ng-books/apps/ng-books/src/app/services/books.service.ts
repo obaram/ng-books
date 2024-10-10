@@ -1,4 +1,3 @@
-// Define the shape of a book object
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
@@ -12,8 +11,15 @@ export class BooksService {
 
   constructor(private http: HttpClient) { }
 
-  public getBooks(): Observable<Book[]> {
-    return this.http.get<Book[]>(this.apiUrl);
+  public getBooks(filters: Record<string, string>): Observable<Book[]> {
+    const searchParams = new URLSearchParams();
+    Object.keys(filters).forEach(key => {
+      if (filters[key]) {
+        searchParams.set(`${key}_like`, filters[key]);
+      }
+    });
+
+    return this.http.get<Book[]>(`${this.apiUrl}?${searchParams.toString()}`);
   }
 
   public getBookById(id: number): Observable<Book> {

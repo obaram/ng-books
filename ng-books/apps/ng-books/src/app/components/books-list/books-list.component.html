@@ -1,15 +1,16 @@
+
 <div class="books-container">
-  <div *ngIf="books?.length">
+  <div>
     <div class="books-header">
       <h1>Books Collection</h1>
       <button mat-raised-button color="primary" type="submit" (click)="onCreateClick()">Create</button>
     </div>
-    <div class="books-grid">
+    <lib-search-bar placeholder="search" title="search" label="search" (search)="onSearch($event)"/>
+    <div  *ngIf="books?.length" class="books-grid">
       <app-books-list-item *ngFor="let book of books" [book]="book"/>
     </div>
-  </div>
-
-  <div *ngIf="!books?.length" class="no-books">
-    <p>No books available.</p>
+    <div *ngIf="!books?.length" class="no-books">
+      <p>No books available.</p>
+    </div>
   </div>
 </div>
