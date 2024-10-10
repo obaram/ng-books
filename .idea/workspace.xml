@@ -23,27 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea7e228a-e120-444c-915b-07a236c6ff05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/api/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/book-form/book-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list-item/books-list-item.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/components/books-list/books-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/services/books.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/services/books.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.effects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/state/books.selectors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-create/book-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-create/book-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-edit/book-edit.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/apps/ng-books/src/app/views/books-list/books-view.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/nx.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/nx.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-books/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/tsconfig.base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-books/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ng-books/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
