@@ -1,17 +1,15 @@
-
-<div [ngStyle]="{'padding': '24px 48px'}">
-<div *ngIf="books?.length">
-  <div [ngStyle]="{ 'padding': '24px 0px' }">
-    <h1>Books Collection</h1>
-    <button mat-raised-button color="primary" type="submit" (click)="onCreateClick()">Create</button>
+<div class="books-container">
+  <div *ngIf="books?.length">
+    <div class="books-header">
+      <h1>Books Collection</h1>
+      <button mat-raised-button color="primary" type="submit" (click)="onCreateClick()">Create</button>
+    </div>
+    <div class="books-grid">
+      <app-books-list-item *ngFor="let book of books" [book]="book"/>
+    </div>
   </div>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
-    <app-books-list-item *ngFor="let book of books" [book]="book"/>
+
+  <div *ngIf="!books?.length" class="no-books">
+    <p>No books available.</p>
   </div>
 </div>
-
-<div *ngIf="!books?.length">
-  <p>No books available.</p>
-</div>
-</div>
-

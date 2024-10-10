@@ -17,23 +17,29 @@ import {AppState} from "../../types/app-state";
 @Component({
   standalone: true,
   selector: 'app-books-list-item',
-  imports: [CommonModule, MatCard, MatCardContent, MatCardHeader, MatCardTitle, MatCardSubtitle, MatCardImage, MatCardActions, MatButton],
+  imports: [
+    CommonModule,
+    MatCard,
+    MatCardContent,
+    MatCardHeader,
+    MatCardTitle,
+    MatCardSubtitle,
+    MatCardImage,
+    MatCardActions,
+    MatButton],
   templateUrl: './books-list-item.component.html',
+  styleUrls: ['./books-list-item.component.scss']
 })
 export class BooksListItemComponent {
-  @Input() book: Book | null = null;
+  @Input() book!: Book;
 
   constructor(private store: Store<AppState>) {}
 
-  onEditClick(): void {
-    if (this.book && this.book.id) {
+  public onEditClick(): void {
       this.store.dispatch(navigateToEditView({ bookId: this.book.id }));
-    }
   }
 
-  onDeleteClick(): void {
-    if (this.book && this.book.id) {
+  public onDeleteClick(): void {
       this.store.dispatch(deleteBook({ bookId: this.book.id }));
-    }
   }
 }
