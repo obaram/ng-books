@@ -1,2 +1,0 @@
-# ng-books
-ng-books
